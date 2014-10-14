@@ -3,12 +3,11 @@
 namespace Cms\DashBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\HttpFoundation\Response;
 
 class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return new Response('Teste');
+        return $this->render('CmsDashBundle:Default:index.html.twig');
     }
 }
