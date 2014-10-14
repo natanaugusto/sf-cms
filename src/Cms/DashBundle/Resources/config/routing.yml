@@ -1,3 +1,6 @@
 cms_dash_homepage:
     path:     /
     defaults: { _controller: CmsDashBundle:Default:index }
+cms_dash_dashboard:
+    path: /board
+    defaults: { _controller: CmsDashBundle:Default:board }

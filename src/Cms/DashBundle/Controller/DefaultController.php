@@ -10,4 +10,9 @@ class DefaultController extends Controller
     {
         return $this->render('CmsDashBundle:Default:index.html.twig');
     }
+
+    public function boardAction()
+    {
+        return $this->render('CmsDashBundle:Default:board.html.twig');
+    }
 }
