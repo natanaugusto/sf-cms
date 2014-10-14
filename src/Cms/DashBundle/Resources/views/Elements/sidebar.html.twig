@@ -1,0 +1,12 @@
+<ul class="nav main-menu">
+	{% block sidebar %}
+	{% for menu in menus %}
+	<li>
+		<a class="ajax-link" href="{{ menu.link }}">
+			<i class="fa fa-{{ menu.icon }}"></i>
+			<span class="hidden-xs">{{ menu.title }}</span>
+		</a>
+	</li>
+	{% endfor %}
+	{% endblock %}
+</ul>
