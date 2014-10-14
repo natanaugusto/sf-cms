@@ -1,0 +1,6 @@
+parameters:
+   app.version: beta
+   app.name: Sf Cms
+   app.charset: 'utf-8'
+   app.author: 'Natan Augusto'
+   app.description: 'CMS com Symfony'

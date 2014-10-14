@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>DevOOPS</title>
-	<meta name="description" content="description">
-	<meta name="author" content="DevOOPS">
+	<meta charset="{{ app_charset }}">
+	<title>{{ app_name }}</title>
+	<meta name="description" content="{{ app_description }}">
+	<meta name="author" content="{{ app_author }}">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="{{ asset('bundles/cmsdash/plugins/bootstrap/bootstrap.css') }}" rel="stylesheet">
 	<link href="{{ asset('bundles/cmsdash/plugins/jquery-ui/jquery-ui.min.css') }}" rel="stylesheet">
@@ -49,7 +49,7 @@
 		<div class="container-fluid expanded-panel">
 			<div class="row">
 				<div id="logo" class="col-xs-12 col-sm-2">
-					<a href="index.html">DevOOPS</a>
+					<a href="index.html">{{ app_name }}</a>
 				</div>
 				<div id="top-panel" class="col-xs-12 col-sm-10">
 					<div class="row">

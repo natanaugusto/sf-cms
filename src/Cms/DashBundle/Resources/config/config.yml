@@ -1,0 +1,10 @@
+imports:
+    - { resource: parameters.yml }
+
+twig:
+   globals:
+       app_version: "%app.version%"
+       app_name: "%app.name%"
+       app_charset: "%app.charset%"
+       app_author: "%app.author%"
+       app_description: "%app.description%"
