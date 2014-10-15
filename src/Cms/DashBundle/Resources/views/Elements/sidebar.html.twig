@@ -1,12 +1,30 @@
 <ul class="nav main-menu">
 	{% block sidebar %}
 	{% for menu in menus %}
+	{% if menu.dropdown %}
+	<li class="dropdown">
+		<a class="dropdown-toggle" href="{{ menu.link }}">
+			<i class="fa fa-{{ menu.icon }}"></i>
+			<span class="hidden-xs">{{ menu.title }}</span>
+		</a>
+		<ul class="dropdown-menu">
+			{% for dropdown in menu.dropdown %}
+			<li>
+				<a class="ajax-link" href="{{ dropdown.link }}">
+					{{ dropdown.title }}
+				</a>
+			</li>
+			{% endfor %}
+		</ul>
+	</li>
+	{% else %}
 	<li>
 		<a class="ajax-link" href="{{ menu.link }}">
 			<i class="fa fa-{{ menu.icon }}"></i>
 			<span class="hidden-xs">{{ menu.title }}</span>
 		</a>
 	</li>
+	{% endif %}
 	{% endfor %}
 	{% endblock %}
 </ul>
