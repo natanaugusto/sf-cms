@@ -1,14 +1,14 @@
 <?php
 namespace Cms\DashBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Cms\DashBundle\DependencyInjection\CmsDashExtension;
 
 class ElementsController extends Controller
 {
 	public function sidebarAction()
 	{
 
-		/*$menus = array(
+		$menu = new Menu();
+		$menus = array(
 			array(
 				'title' => 'Dashboard',
 				'link' => 'board',
@@ -30,9 +30,7 @@ class ElementsController extends Controller
 						),
 					),
 				)
-			);*/
-		$extension = new CmsDashExtension;
-		var_dump($extension->load(array('menus')));exit;
+			);
 		return $this->render('CmsDashBundle:Elements:sidebar.html.twig', compact('menus'));
 	}
 }

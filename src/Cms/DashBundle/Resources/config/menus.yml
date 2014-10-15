@@ -1,17 +1,18 @@
-menus:
-    _dashboard:
-        title: 'Dashboard'
-        link: 'board'
-        icon: 'dashboard'
-        dropdown: null
-    _pages:
-        title: 'Pages'
-        link: '#'
-        icon: 'list'
-        dropdown:
-            _list:
-                title: 'List'
-                link: 'pages/list'
-            _new:
-                title: 'New'
-                link: 'pages/new'
+parameters:
+    menus:
+        _dashboard:
+            title: 'Dashboard'
+            link: 'board'
+            icon: 'dashboard'
+            dropdown: null
+        _pages:
+            title: 'Pages'
+            link: '#'
+            icon: 'list'
+            dropdown:
+                _list:
+                    title: 'List'
+                    link: 'pages/list'
+                _new:
+                    title: 'New'
+                    link: 'pages/new'
