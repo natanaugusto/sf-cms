@@ -8,8 +8,8 @@ framework:
     profiler: { only_exceptions: false }
 
 web_profiler:
-    toolbar: "%debug_toolbar%"
-    intercept_redirects: "%debug_redirects%"
+    toolbar: true
+    intercept_redirects: false
 
 monolog:
     handlers:
@@ -17,9 +17,6 @@ monolog:
             type:   stream
             path:   "%kernel.logs_dir%/%kernel.environment%.log"
             level:  debug
-        console:
-            type:   console
-            bubble: false
         # uncomment to get logging in your browser
         # you may have to allow bigger header sizes in your Web server configuration
         #firephp:
@@ -30,7 +27,7 @@ monolog:
         #    level:  info
 
 assetic:
-    use_controller: "%use_assetic_controller%"
+    use_controller: true
 
 #swiftmailer:
 #    delivery_address: me@example.com

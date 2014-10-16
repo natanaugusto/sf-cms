@@ -1,6 +1,7 @@
 parameters:
-   dash.version: beta
-   dash.name: Sf Cms
-   dash.charset: 'utf-8'
-   dash.author: 'Natan Augusto'
-   dash.description: 'CMS com Symfony'
+   cms_dash.version: beta
+   cms_dash.name: Sf Cms
+   cms_dash.charset: 'utf-8'
+   cms_dash.author: 'Natan Augusto'
+   cms_dash.description: 'CMS com Symfony'
+   cms_dash.cnd: 'dash/'

@@ -6,8 +6,6 @@ class ElementsController extends Controller
 {
 	public function sidebarAction()
 	{
-
-		$menu = new Menu();
 		$menus = array(
 			array(
 				'title' => 'Dashboard',

@@ -1,4 +1,5 @@
+cmf_create:
+    resource: "@CmfCreateBundle/Resources/config/routing/rest.xml"
 cms_dash:
     resource: "@CmsDashBundle/Resources/config/routing.yml"
     prefix:   /dash
-

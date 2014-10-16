@@ -3,8 +3,8 @@ imports:
 
 twig:
    globals:
-       dash_version: "%dash.version%"
-       dash_name: "%dash.name%"
-       dash_charset: "%dash.charset%"
-       dash_author: "%dash.author%"
-       dash_description: "%dash.description%"
+       dash_version: "%cms_dash.version%"
+       dash_name: "%cms_dash.name%"
+       dash_charset: "%cms_dash.charset%"
+       dash_author: "%cms_dash.author%"
+       dash_description: "%cms_dash.description%"
