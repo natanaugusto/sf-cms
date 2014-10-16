@@ -1,13 +1,14 @@
 {
-    "name": "symfony-cmf/standard-edition",
-    "homepage": "http://cmf.symfony.com",
+    "name": "natanaugusto/sf-cms",
+    "homepage": "https://github.com/natanaugusto/sf-cms",
     "license": "MIT",
     "type": "project",
-    "description": "The \"Symfony CMF Standard Edition\" distribution",
+    "description": "Simples CMS com Symfony para testes",
     "authors": [
         {
-            "name": "Symfony CMF Community",
-            "homepage": "https://github.com/symfony-cmf/standard-edition/contributors"
+            "name": "Natan Augusto",
+            "homepage": "https://github.com/natanaugusto",
+            "email": "natanaugusto@gmail.com"
         }
     ],
     "autoload": {
